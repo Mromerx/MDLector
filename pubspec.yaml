@@ -1,0 +1,31 @@
+name: mdlector
+description: "Markdown reader with tap-to-translate and select-to-translate."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management: providers for settings and the open document.
+  flutter_riverpod: ^3.4.3
+
+  # HTTP transport for the public Google Translate endpoint (no API key).
+  http: ^1.6.0
+
+  # Persistent user settings (font size, theme, translator target).
+  shared_preferences: ^2.5.5
+
+  # Native file picker to open .md / .markdown / .txt books.
+  file_picker: ^11.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
